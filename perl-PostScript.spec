@@ -4,7 +4,8 @@ Summary(pl):	Modu³ perla PostScript
 Name:		perl-PostScript
 Version:	0.06
 Release:	6
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/PostScript/PostScript-%{version}.tar.gz
 # Source0-md5:	2a91cc23f2d8958e063f7ff09163faa0
