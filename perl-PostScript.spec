@@ -6,9 +6,10 @@ Version:	0.06
 Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/PostScript/PostScript-%{version}.tar.gz
-Patch0:		perl-PostScript-paths.patch
+Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 %requires_eq	perl
@@ -31,8 +32,8 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README *txt
 
@@ -41,9 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,example.txt}.gz example.pl
-
+%doc *.gz example.pl
 %{perl_sitelib}/PostScript/*.pm
-%{perl_sitearch}/auto/PostScript/Metrics
-
 %{_mandir}/man3/*
