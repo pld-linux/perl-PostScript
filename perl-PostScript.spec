@@ -27,7 +27,7 @@ PostScript - modu³ do tworzenia dokumentów w formacie PostScript.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
