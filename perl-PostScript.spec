@@ -26,7 +26,7 @@ PostScript - modu³ do tworzenia dokumentów w formacie PostScript.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
