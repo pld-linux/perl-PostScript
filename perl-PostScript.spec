@@ -6,7 +6,7 @@ Version:	0.06
 Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/PostScript/PostScript-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/PostScript/PostScript-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
