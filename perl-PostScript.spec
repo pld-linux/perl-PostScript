@@ -23,7 +23,7 @@ PostScript - modu³ do tworzenia dokumentów w formacie PostScript.
 
 %prep
 %setup -q -n PostScript-%{version}
-%patch -p0
+%patch0 -p0
 
 %build
 %{__perl} Makefile.PL \
