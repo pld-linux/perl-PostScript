@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	PostScript perl module
-Summary(pl):	Modu≥ perla PostScript
+Summary(pl.UTF-8):   Modu≈Ç perla PostScript
 Name:		perl-PostScript
 Version:	0.06
 Release:	7
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 PostScript - module for generating PostScript documents.
 
-%description -l pl
-PostScript - modu≥ do tworzenia dokumentÛw w formacie PostScript.
+%description -l pl.UTF-8
+PostScript - modu≈Ç do tworzenia dokument√≥w w formacie PostScript.
 
 %prep
 %setup -q -n PostScript-%{version}
