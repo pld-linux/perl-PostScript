@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	PostScript perl module
-Summary(pl.UTF-8):   Moduł perla PostScript
+Summary(pl.UTF-8):	Moduł perla PostScript
 Name:		perl-PostScript
 Version:	0.06
 Release:	7
