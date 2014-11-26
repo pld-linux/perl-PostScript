@@ -1,3 +1,4 @@
+%define		pdir	PostScript
 %include	/usr/lib/rpm/macros.perl
 Summary:	PostScript perl module
 Summary(pl.UTF-8):	Moduł perla PostScript
@@ -10,8 +11,9 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/PostScript/PostScript-%{version}.tar.gz
 # Source0-md5:	2a91cc23f2d8958e063f7ff09163faa0
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/PostScript/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,7 +38,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install example.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p example.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
