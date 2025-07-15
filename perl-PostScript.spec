@@ -24,7 +24,7 @@ PostScript - moduł do tworzenia dokumentów w formacie PostScript.
 
 %prep
 %setup -q -n PostScript-%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__perl} Makefile.PL \
